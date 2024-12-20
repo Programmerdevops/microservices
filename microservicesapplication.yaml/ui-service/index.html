@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tire Application</h1>
+
+    <div>
+        <h2>User Registration</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div>
+        <h2>Inventory</h2>
+        <button onclick="fetchInventory()">Fetch Inventory</button>
+        <pre id="inventory"></pre>
+    </div>
+
+    <div>
+        <h2>Create Order</h2>
+        <input type="text" id="orderUserId" placeholder="User ID">
+        <input type="text" id="tireModel" placeholder="Tire Model">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="createOrder()">Create Order</button>
+    </div>
+
+    <div>
+        <h2>Send Notification</h2>
+        <input type="text" id="notificationUserId" placeholder="User ID">
+        <input type="text" id="message" placeholder="Message">
+        <button onclick="sendNotification()">Send Notification</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
